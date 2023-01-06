@@ -6,7 +6,7 @@
 /*   By: waraissi <waraissi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:04:17 by waraissi          #+#    #+#             */
-/*   Updated: 2023/01/06 01:13:39 by waraissi         ###   ########.fr       */
+/*   Updated: 2023/01/06 02:37:24 by waraissi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 # include<stdio.h>
 # include<unistd.h>
 # include<ctype.h>
+# include<stdarg.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -82,5 +83,16 @@ int		get_index(char	*str);
 char	*before_newline(char *str);
 char	*after_newline(char *str);
 char	*get_next_line(int fd);
+
+/*************************GET NEXT LINE****************************/
+
+void	ft_putchar(int fd, char c, int *res);
+void	ft_putstr(int fd, char *s, int *res);
+void	ft_putnbr(int fd, int n, int *res);
+void	ft_putnbr_unsigned(int fd, unsigned int nbr, int *res);
+void	ft_putnbr_base(int fd, unsigned long long nbr, int *res);
+void	ft_putnbr_base_lower(int fd, unsigned int nbr, int *res);
+void	ft_putnbr_base_upper(int fd, unsigned int nbr, int *res);
+int		ft_printf(int fd, const char *str, ...);
 
 #endif

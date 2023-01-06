@@ -6,7 +6,7 @@
 #    By: waraissi <waraissi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 12:08:36 by waraissi          #+#    #+#              #
-#    Updated: 2023/01/06 02:20:14 by waraissi         ###   ########.fr        #
+#    Updated: 2023/01/06 02:36:32 by waraissi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,15 @@ SRCS = ft_isalpha.c \
  			ft_lstclear.c\
  			ft_lstiter.c\
  			ft_lstmap.c \
-			get_next_line.c 
+			get_next_line.c\
+			ft_putchar.c\
+				ft_putnbr.c\
+				ft_putstr.c\
+ 	 ft_putnbr_base_upper.c\
+	 ft_putnbr_base_lower.c\
+	   ft_putnbr_unsigned.c\
+		   ft_putnbr_base.c\
+		   		ft_printf.c
 			
 OBJCTS = ${SRCS:.c=.o}
 
